@@ -1,20 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import{
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-
-function App() {
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import Pricing from './pages/Pricing/Pricing';
+import Contact from './pages/Contact/Contact';
+import Booking from './pages/Booking/Booking';
+const App = () => {
   return (
-<>
-<Navbar/>
-
-</>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" exact component={Home} />
+        <Route path="/About" component={About} />
+        <Route path="/Pricing" component={Pricing} />
+        <Route path="/Contact" component={Contact} />
+        <Route path="/book-demo" component={Booking} />
+        </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

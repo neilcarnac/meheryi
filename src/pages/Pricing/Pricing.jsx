@@ -1,6 +1,6 @@
 import React from 'react'
 
-const booking = () => {
+const Pricing = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const booking = () => {
   )
 }
 
-export default booking
+export default Pricing
