@@ -6,37 +6,37 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <AppBar position="static">
-      <Toolbar sx={{ color: 'white', display: 'flex', justifyContent: 'space-between', backgroundColor: 'black' }}>
+      <Toolbar sx={{display: 'flex', justifyContent: 'space-between', backgroundColor: 'black' }}>
         <Box>
         </Box>
         <Box>
           <RouterLink to="/">
-            <Button>
+            <Button sx = {{color: 'white'}}>
               Home
             </Button>
           </RouterLink>
           <RouterLink to="/About">
-            <Button>
+            <Button sx = {{color: 'white'}}>
               About
             </Button>
           </RouterLink>
           <RouterLink to="/Pricing">
-            <Button>
+            <Button sx = {{color: 'white'}}>
               Pricing
             </Button>
           </RouterLink>
           <RouterLink to="/Contact">
-            <Button>
+            <Button sx = {{color: 'white'}}>
               Contact
             </Button>
           </RouterLink>
           <RouterLink to="/book-demo">
-            <Button>
+            <Button sx = {{color: 'white'}}>
               Book a Demo
             </Button>
           </RouterLink>
           <RouterLink to="/SignupPage">
-            <Button>
+            <Button sx = {{color: 'white'}}>
               Signup
             </Button>
           </RouterLink>
