@@ -1,10 +1,11 @@
 import React from 'react'
-
+import Navbar from '../../components/Navbar'
 const Pricing = () => {
   return (
-    <div>
-      
-    </div>
+<>
+<Navbar />
+<h1>Pricing</h1>
+</>
   )
 }
 
