@@ -1,8 +1,11 @@
 import React from 'react';
 import { TextField, Button, Container, Typography } from '@mui/material';
-
+import Navsign from './Navsign';
 const SignupPage = () => {
   return (
+    <>
+    <Navsign />
+
     <Container maxWidth="sm" sx={{ marginTop: '2rem' }}>
       <Typography variant="h4" sx={{ textAlign: 'center', marginBottom: '2rem', color: 'black' }}>
         Signup
@@ -57,6 +60,7 @@ const SignupPage = () => {
         </center>
       </form>
     </Container>
+    </>
   );
 };
 
